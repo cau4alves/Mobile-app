@@ -4,8 +4,7 @@ import Login from './screens/Login';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <StatusBar hidden />
+    <SafeAreaView style={{ flex: 1}}>
       <Login />
     </SafeAreaView>
   );

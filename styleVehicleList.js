@@ -23,7 +23,7 @@ margin-top: 10px;
 const Cars = styled.View`
     justify-content: center;
     margin-top: 20px;
-    width: 350px;
+    width: 400px;
     height: 80px;
     border: 1.5px solid black;
     border-radius: 20px;

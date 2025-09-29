@@ -10,24 +10,26 @@ const Header = styled.View`
 const Container = styled.View`
     flex: 1;
     align-items: center;
+    background-color: #0D0D0D;
 `;
 
 const Title = styled.Text`
-margin-top: 10px;
+    margin-top: 40px;
     font-size: 24px;
     font-weight: bold;
     font-family: 'Saira';
-    color: #333E63;
+    color: white;
 `;
 
 const Cars = styled.View`
+    background-color: white;
     justify-content: center;
     margin-top: 20px;
-    width: 400px;
+    width: 380px;
     height: 80px;
-    border: 1.5px solid black;
     border-radius: 20px;
     padding: 10px;
+    border-radius: 20px;
 `;
 
 const StatusCar = styled.Text`
@@ -39,4 +41,18 @@ const CarContainer = styled.View`
     
 `;
 
-export { Header, Container, Title, Cars, StatusCar, CarContainer };
+const Button = styled.View`
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 380px;
+    background-color: #FEDD66;
+    border-radius: 15px;
+    margin-top: 380px;
+`;
+
+const ButtonTitle = styled.Text`
+    font-size: 20px;
+`;
+
+export { Header, Container, Title, Cars, StatusCar, CarContainer, Button, ButtonTitle };

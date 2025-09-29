@@ -5,7 +5,7 @@ import * as S from '../styleLogin.js';
 export default function Login() {
     return (
     <S.Container>
-        <StatusBar hidden />
+       
 
         <S.Title>Sign in to your Account</S.Title>
         <S.SubTitle>Don’t have an account? 

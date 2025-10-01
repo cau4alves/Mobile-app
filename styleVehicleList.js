@@ -41,7 +41,7 @@ const CarContainer = styled.View`
     
 `;
 
-const Button = styled.View`
+const Button = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     height: 80px;

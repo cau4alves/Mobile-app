@@ -1,8 +1,10 @@
 import { SafeAreaView, TextInput, Text, TouchableOpacity, Button } from 'react-native';
 import * as S from '../styleLogin.js';
+import { useNavigation } from '@react-navigation/native';
  
 
 export default function Login() {
+    const navigation = useNavigation()
     return (
     <S.Container>
        
@@ -23,7 +25,7 @@ export default function Login() {
           secureTextEntry
         />
 
-        <S.Button>
+        <S.Button onPress={() => navigation.navigate("Home")}>
           <S.ButtonText>Log In</S.ButtonText>
         </S.Button>
     </S.Container>

@@ -24,7 +24,8 @@ export default function VehicleList() {
                         </S.CarContainer>
                     </S.Cars>
                 ))}
-                <S.Button onPress={() => navigation.navigate("Entrance")}><S.ButtonTitle>Registrar entrada</S.ButtonTitle></S.Button>
+                <S.ButtonEntry onPress={() => navigation.navigate("Entrance")}><S.ButtonTitle>Registrar entrada</S.ButtonTitle></S.ButtonEntry>
+                <S.ButtonExit onPress={() => navigation.navigate("Exit")}><S.ButtonTitle>Registrar saida</S.ButtonTitle></S.ButtonExit>
             </S.Container>
         
     );

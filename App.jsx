@@ -8,6 +8,7 @@ import VehicleEntrance from './screens/VehicleEntrance';
 import VehicleExit from './screens/VehicleExit';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createStaticNavigation } from '@react-navigation/native';
+import Toast from 'react-native-toast-message';
 
 const RootStack = createNativeStackNavigator({
   initialRouteName: "Login",
@@ -26,6 +27,7 @@ export default function App() {
   return (
     <SafeAreaView style={{ flex: 1}}>
       <Navigation />
+      <Toast />
     </SafeAreaView>
   );
 }

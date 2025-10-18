@@ -7,7 +7,7 @@ const Container = styled.View`
 `;
 
 const Title = styled.Text`
-    margin-top: 40px;
+    margin-top: 20px;
     color: white;
     text-align: center;
     font-size: 24px;
@@ -23,14 +23,14 @@ const Input = styled.TextInput`
     margin-top: 350px;
 `;
 
-const Button = styled.View`
+const Button = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     height: 60px;
     width: 380px;
     background-color: #FEDD66;
     border-radius: 15px;
-    margin-top: 250px;
+    margin-top: 10px;
 `;
 
 const ButtonTitle = styled.Text`

@@ -14,7 +14,7 @@ const Container = styled.View`
 `;
 
 const Title = styled.Text`
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
     font-family: 'Saira';
@@ -41,18 +41,28 @@ const CarContainer = styled.View`
     
 `;
 
-const Button = styled.TouchableOpacity`
+const ButtonEntry = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     height: 80px;
     width: 380px;
     background-color: #FEDD66;
     border-radius: 15px;
-    margin-top: 220px;
+    margin-top: 190px;
+`;
+
+const ButtonExit = styled.TouchableOpacity`
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 380px;
+    background-color: #FEDD66;
+    border-radius: 15px;
+    margin-top: 10px;
 `;
 
 const ButtonTitle = styled.Text`
     font-size: 20px;
 `;
 
-export { Header, Container, Title, Cars, StatusCar, CarContainer, Button, ButtonTitle };
+export { Header, Container, Title, Cars, StatusCar, CarContainer, ButtonEntry, ButtonExit, ButtonTitle };

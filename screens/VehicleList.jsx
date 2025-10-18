@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import * as S from '../styleVehicleList';
+import { useNavigation } from 'expo-router';
 
 const vehicles = [
   { placa: 'ABC1234', entrada: '2023-09-29 08:30' },
@@ -9,6 +10,8 @@ const vehicles = [
 ];
 
 export default function VehicleList() {
+    const navigation = useNavigation()
+
     return (           
             <S.Container>
                 <Text>Vehicle List Screen</Text>
@@ -21,7 +24,7 @@ export default function VehicleList() {
                         </S.CarContainer>
                     </S.Cars>
                 ))}
-                <S.Button><S.ButtonTitle>Registrar entrada</S.ButtonTitle></S.Button>
+                <S.Button onPress={() => navigation.navigate("Entrance")}><S.ButtonTitle>Registrar entrada</S.ButtonTitle></S.Button>
             </S.Container>
         
     );

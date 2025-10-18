@@ -10,10 +10,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createStaticNavigation } from '@react-navigation/native';
 
 const RootStack = createNativeStackNavigator({
-  initialRouteName: "Home",
+  initialRouteName: "Login",
   screens: {
     Login: Login,
-    Home: VehicleList
+    Home: VehicleList,
+    Register: Register,
+    Entrance: VehicleEntrance,
+    Exit: VehicleExit
   }
 })
 

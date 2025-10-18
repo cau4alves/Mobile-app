@@ -1,13 +1,16 @@
 import { SafeAreaView, Text } from "react-native";
 import * as S from '../styleRegister';
 import { StatusBar } from "expo-status-bar";
+import { useNavigation } from "expo-router";
 
 export default function Register() {
+    const navigation = useNavigation()
+
     return (
         <S.Container>
             <StatusBar hidden />
             <S.Title>Create Account</S.Title>
-            <S.SubTitle>Already have an account? <Text style={{ color: "#4D81E7" }}>Sign Up</Text></S.SubTitle>
+            <S.SubTitle>Already have an account? <Text onPress={() => navigation.navigate("Login")} style={{ color: "#4D81E7" }}>Sign In</Text></S.SubTitle>
             <S.Input1
                 placeholder="Username"
                 placeholderTextColor="black"

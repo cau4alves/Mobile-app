@@ -18,7 +18,10 @@ const RootStack = createNativeStackNavigator({
     Register: Register,
     Entrance: VehicleEntrance,
     Exit: VehicleExit
-  }
+  },
+  screenOptions: {
+    headerShown: false, 
+  },
 })
 
 const Navigation = createStaticNavigation(RootStack)

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'http://192.168.15.170:8080'
+    baseURL: 'https://parking-api-6xqa.onrender.com'
 })
 
 export default api
